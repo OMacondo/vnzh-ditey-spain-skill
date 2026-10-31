@@ -2,7 +2,7 @@
 
 **Адреса:** https://mercurio.delegaciondelgobierno.gob.es/mercurio (стара адреса на sede.administracionespublicas.gob.es перенаправляє сюди).
 
-- ✅ **Вхід** того з батьків, хто подає, своїм сертифікатом. Вхід іде через шлюз Cl@ve. ⚠️ Вхід через Cl@ve PIN/Permanente не перевіряли.
+- ✅ **Вхід** того з батьків, хто подає, своїм сертифікатом. Вхід іде через шлюз Cl@ve. ⚠ Вхід через Cl@ve PIN/Permanente не перевіряли.
 - ✅ **Підпис** сертифікатом через AutoFirma, на Mac у Chrome (див. `sertyfikat-autofirma.md`).
 - Кожна дитина подається **окремою заявою**.
 - Вимкни автоматичний переклад сторінки (Google Translate): він може ламати кнопки й форми.
