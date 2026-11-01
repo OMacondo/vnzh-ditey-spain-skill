@@ -68,8 +68,12 @@ security import me-only.p12 -k ~/Library/Keychains/login.keychain-db
 
 Оригінальний `.p12` не видаляй: це резервна копія. Для іншого Mac бери `me-only.p12`.
 
-## Windows (⚠ не перевірено)
-Подвійний клік по `.p12` → *Usuario actual / Current User* → пароль → автоматичний вибір сховища. Перевірити в Chrome/Edge: *Configuración → Privacidad y seguridad → Seguridad → Administrar certificados*. Firefox може мати власне сховище, тоді туди сертифікат імпортують окремо.
+## Windows
+✅ (друга родина) Windows, AutoFirma, вхід у Mercurio сертифікатом і підпис *Firmar y Registrar* у Chrome спрацювали: і для заяв, і для відповідей на вимоги.
+- AutoFirma: firmaelectronica.gob.es → *Descargas* → версія для Windows → встановити → **повністю закрити браузер** і відкрити знову.
+- ⚠ На іншому державному сайті (не Mercurio) у цієї родини підпис через AutoFirma в Chrome зривався, а в **Edge** пройшов. Якщо в Chrome AutoFirma не відкривається або зависає, спробуй Edge із тим самим сертифікатом.
+
+⚠ Як саме імпортувати сертифікат у Windows, не перевіряли. Загальний спосіб: подвійний клік по `.p12` → *Usuario actual / Current User* → пароль → автоматичний вибір сховища. Перевірити в Chrome/Edge: *Configuración → Privacidad y seguridad → Seguridad → Administrar certificados*. Firefox може мати власне сховище, тоді туди сертифікат імпортують окремо.
 
 ## Чим ти можеш допомогти (Mac)
 - Перевірити, чи встановлена AutoFirma: `ls /Applications | grep -i autofirma`.

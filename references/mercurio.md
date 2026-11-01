@@ -3,7 +3,7 @@
 **Адреса:** https://mercurio.delegaciondelgobierno.gob.es/mercurio (стара адреса на sede.administracionespublicas.gob.es перенаправляє сюди).
 
 - ✅ **Вхід** того з батьків, хто подає, своїм сертифікатом. Вхід іде через шлюз Cl@ve. ⚠ Вхід через Cl@ve PIN/Permanente не перевіряли.
-- ✅ **Підпис** сертифікатом через AutoFirma, на Mac у Chrome (див. `sertyfikat-autofirma.md`).
+- ✅ **Підпис** сертифікатом через AutoFirma, на Mac у Chrome (див. `sertyfikat-autofirma.md`). ✅ (друга родина) На Windows у Chrome теж спрацював.
 - Кожна дитина подається **окремою заявою**.
 - Вимкни автоматичний переклад сторінки (Google Translate): він може ламати кнопки й форми.
 - Заява подається з території Іспанії: на момент подачі і той, хто подає, і дитина мають бути в Іспанії (так було в нас).
@@ -11,6 +11,7 @@
 ## Підготовка файлів (`Подача_Mercurio/`)
 ✅ Обмеження, як вони були на екрані завантаження:
 - **≤ 6 МБ** на файл (PDF);
+- ✅ (друга родина) **≤ 15 МБ разом** на одну заяву. Ліміт впирається швидко, бо документи батьків ідуть у кожну заяву. Стисни скани паспортів і TIE заздалегідь (наприклад, ~110–150 dpi) і порахуй суму по кожній дитині;
 - у назвах лише латиниця, цифри, «_» і «-»;
 - **один файл на кожен обов'язковий тип документа**. Якщо документів кілька (наприклад, квитанція і бланк мита), об'єднай їх в один PDF. Тип «Otros documentos» можна вибирати кілька разів, щоразу з текстовим описом.
 
@@ -23,6 +24,7 @@ Mercurio може відхилити файл, не пояснивши прич�
 01_Certificado_nacimiento_<ДИТИНА>_original_apostilla_traduccion.pdf
 02_Padron_familiar.pdf
 03_Certificado_escolar_<ДИТИНА>.pdf          (6–16 років)
+03b_Declaracion_escolarizacion.pdf           (бланк декларації, див. dokumenty.md)
 04_Pasaporte_TIE_<ХТО_ПОДАЄ>.pdf
 04_Pasaporte_TIE_<ДРУГИЙ_З_БАТЬКІВ>.pdf
 05_Pasaporte_TIE_<ДИТИНА>.pdf
@@ -55,6 +57,8 @@ Mercurio може відхилити файл, не пояснивши прич�
 | 02_Padron_familiar | *Otros documentos que desee aportar* → опис: CERTIFICADO DE EMPADRONAMIENTO FAMILIAR |
 | 04_Pasaporte_TIE_<ДРУГИЙ> | *Otros documentos* → PASAPORTE Y TIE DEL PADRE / DE LA MADRE |
 | 07_Apoderamiento_… | *Otros documentos* → APODERAMIENTO DEL PADRE A FAVOR DE LA MADRE (або навпаки) |
+| 03b_Declaracion_escolarizacion | ✅ (друга родина) *Otros documentos* → DECLARACIÓN DE ESCOLARIZACIÓN DE MENORES A CARGO |
+| Письмова згода замість Apodera | ✅ (друга родина) *Otros documentos* → CONSENTIMIENTO DE LA MADRE / DEL PADRE |
 
    - Для «Otros documentos» Mercurio просить **текстовий опис**. Пиши коротко, великими літерами.
    - **Не вибирай** «Informe de vivienda» і «Acreditación de la permanencia continuada (mínimo 2 años)»: за SEM 2/2026 вони не потрібні.
