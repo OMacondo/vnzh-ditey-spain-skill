@@ -11,7 +11,7 @@
 - ✅ Вхід у Mercurio сертифікатом (через шлюз Cl@ve).
 - ⚠ Вхід через Cl@ve PIN/Permanente і підпис без сертифіката (хмарний Cl@ve Firma) не перевіряли. Тому краще, щоб у того, хто подає, був сертифікат.
 - ⚠ Як отримати сертифікат, скіл не перевіряв: у нас вони вже були.
-- ⚠ Windows не перевіряли.
+- ✅ (друга родина) Windows: AutoFirma, вхід і підпис у Mercurio в Chrome (див. «Windows» нижче).
 
 ## Якщо сертифіката немає (⚠ не перевірено)
 - **FNMT:** запит на sede.fnmt.gob.es, далі ідентифікація в офісі за записом (або відеоідентифікація, якщо вона доступна). Потім сертифікат завантажують **у тому самому браузері на тому самому комп'ютері**.
@@ -71,7 +71,8 @@ security import me-only.p12 -k ~/Library/Keychains/login.keychain-db
 ## Windows
 ✅ (друга родина) Windows, AutoFirma, вхід у Mercurio сертифікатом і підпис *Firmar y Registrar* у Chrome спрацювали: і для заяв, і для відповідей на вимоги.
 - AutoFirma: firmaelectronica.gob.es → *Descargas* → версія для Windows → встановити → **повністю закрити браузер** і відкрити знову.
-- ⚠ На іншому державному сайті (не Mercurio) у цієї родини підпис через AutoFirma в Chrome зривався, а в **Edge** пройшов. Якщо в Chrome AutoFirma не відкривається або зависає, спробуй Edge із тим самим сертифікатом.
+- Порада (для Mercurio не знадобилася): на іншому державному сайті в цієї родини підпис через AutoFirma в Chrome зривався, а в **Edge** пройшов. Якщо в Chrome AutoFirma не відкривається або зависає, спробуй Edge із тим самим сертифікатом.
+- Перевірити, що сертифікат стоїть разом із ключем: `certutil -user -store My`. У блоці потрібного сертифіката мають бути рядки `Key Container` і `Provider`. Або *certmgr.msc* → *Personal* → *Certificates* → властивості сертифіката: «You have a private key that corresponds to this certificate».
 
 ⚠ Як саме імпортувати сертифікат у Windows, не перевіряли. Загальний спосіб: подвійний клік по `.p12` → *Usuario actual / Current User* → пароль → автоматичний вибір сховища. Перевірити в Chrome/Edge: *Configuración → Privacidad y seguridad → Seguridad → Administrar certificados*. Firefox може мати власне сховище, тоді туди сертифікат імпортують окремо.
 
