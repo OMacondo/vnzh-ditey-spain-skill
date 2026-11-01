@@ -36,7 +36,7 @@ Mercurio може відхилити файл, не пояснивши прич�
 Якщо файл перевищує 6 МБ, стисни зображення (наприклад, JPEG ~150 dpi), **зберігаючи розмір сторінок**. Після цього перевір, що текст читається.
 
 ## ✅ Кроки в Mercurio (так було в жовтні 2026)
-1. Вхід → на головній, праворуч, розділ «Presentar solicitud o aportar documentos a expedientes» → **CONTINUAR PRESENTACIÓN**. Ліва кнопка, «Consulta de solicitud existente», потрібна для перевірки статусу.
+1. Вхід → на головній, праворуч, розділ «Presentar solicitud o aportar documentos a expedientes» → **CONTINUAR PRESENTACIÓN**. Ліва кнопка, «Consulta de solicitud existente», показує, чи зареєстровано заяву (див. `pislia-podachi.md`, п. 3). ⚠ Уже після подачі CONTINUAR PRESENTACIÓN відкрило в нас вікно «Opciones»: для нової заяви там, найімовірніше, *Presentar nueva solicitud [провінція]*, а документи до поданої заяви доносять через *Aportar documentos a expedientes* (див. `pislia-podachi.md`, п. 4).
 2. «Solicitudes permitidas en la provincia de …»: перевір провінцію → ◉ **EX25** → CONTINUAR. Не вибирай EX26 («modificación»), хоча процес і називають «модифікацією».
 3. **Тип дозволу:** блок «RESIDENCIA MENOR EXTRANJERO ACOMPAÑADO (CAP I)» → ◉ **art. 160**. Галочку «NO CONSIENTO» не став → CONTINUAR.
 4. Вкладка **DATOS DEL SOLICITANTE** (дитина й представник), див. `ex25.md` → CONTINUAR.
