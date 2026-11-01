@@ -23,12 +23,13 @@ Mercurio може відхилити файл, не пояснивши прич�
 ```
 01_Certificado_nacimiento_<ДИТИНА>_original_apostilla_traduccion.pdf
 02_Padron_familiar.pdf
-03_Certificado_escolar_<ДИТИНА>.pdf          (6–16 років)
+03_Certificado_escolar_<ДИТИНА>.pdf          (шкільний вік, див. dokumenty.md)
 03b_Declaracion_escolarizacion.pdf           (бланк декларації, див. dokumenty.md)
 04_Pasaporte_TIE_<ХТО_ПОДАЄ>.pdf
 04_Pasaporte_TIE_<ДРУГИЙ_З_БАТЬКІВ>.pdf
 05_Pasaporte_TIE_<ДИТИНА>.pdf
-07_Apoderamiento_<ДРУГИЙ>_a_<ХТО_ПОДАЄ>.pdf
+06_Consentimiento_<ДРУГИЙ>_<ДИТИНА>.pdf      (письмова згода, окрема на кожну дитину)
+07_Apoderamiento_<ДРУГИЙ>_a_<ХТО_ПОДАЄ>.pdf  (якщо є Apodera)
 09_Tasa_790-052_<ДИТИНА>_completo.pdf        (квитанція з NRC + бланк)
 ```
 
@@ -58,7 +59,7 @@ Mercurio може відхилити файл, не пояснивши прич�
 | 04_Pasaporte_TIE_<ДРУГИЙ> | *Otros documentos* → PASAPORTE Y TIE DEL PADRE / DE LA MADRE |
 | 07_Apoderamiento_… | *Otros documentos* → APODERAMIENTO DEL PADRE A FAVOR DE LA MADRE (або навпаки) |
 | 03b_Declaracion_escolarizacion | ✅ (друга родина) *Otros documentos* → DECLARACIÓN DE ESCOLARIZACIÓN DE MENORES A CARGO |
-| Письмова згода замість Apodera | ✅ (друга родина) *Otros documentos* → CONSENTIMIENTO DE LA MADRE / DEL PADRE |
+| 06_Consentimiento_… (письмова згода, і з Apodera теж) | ✅ (друга родина) *Otros documentos* → CONSENTIMIENTO DE LA MADRE / DEL PADRE |
 
    - Для «Otros documentos» Mercurio просить **текстовий опис**. Пиши коротко, великими літерами.
    - **Не вибирай** «Informe de vivienda» і «Acreditación de la permanencia continuada (mínimo 2 años)»: за SEM 2/2026 вони не потрібні.

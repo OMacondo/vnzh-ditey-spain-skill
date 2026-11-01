@@ -9,6 +9,8 @@
 - адресу;
 - документи дитини: свідоцтво з апостилем і перекладом, паспорт, TIE.
 
+Довідка міністерства (*Hoja informativa 42*) вимагає згоду другого з батьків саме на проживання дитини в Іспанії, тому в кінці тексту є окреме речення про це. Попроси нотаріуса його залишити.
+
 ---
 
 **PODER ESPECIAL**
@@ -21,3 +23,5 @@ El poderdante, D./Dña. **[NOMBRE Y APELLIDOS]**, con NIE/pasaporte **[…]**, c
 4. Representar los intereses del/de los menor(es) ante los organismos e instituciones correspondientes dentro de los límites del presente poder.
 
 Las facultades podrán ejercitarse aun cuando se incida en la figura de **autocontratación, multirrepresentación o conflicto de intereses**, en la medida permitida por la ley.
+
+Asimismo, el poderdante presta su **consentimiento expreso** para que el/los menor(es) resida(n) en España.
