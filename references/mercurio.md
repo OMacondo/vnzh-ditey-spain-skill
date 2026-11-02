@@ -58,10 +58,10 @@ Mercurio може відхилити файл, не пояснивши прич�
 | 02_Padron_familiar | *Otros documentos que desee aportar* → опис: CERTIFICADO DE EMPADRONAMIENTO FAMILIAR |
 | 04_Pasaporte_TIE_<ДРУГИЙ> | *Otros documentos* → PASAPORTE Y TIE DEL PADRE / DE LA MADRE |
 | 07_Apoderamiento_… | *Otros documentos* → APODERAMIENTO DEL PADRE A FAVOR DE LA MADRE (або навпаки) |
-| 03b_Declaracion_escolarizacion | ✅ (друга родина) *Otros documentos* → DECLARACIÓN DE ESCOLARIZACIÓN DE MENORES A CARGO |
+| 03b_Declaracion_escolarizacion | ✅ (друга родина) *Otros documentos* → DECLARACION DE ESCOLARIZACION DE MENORES A CARGO |
 | 06_Consentimiento_… (письмова згода, і з Apodera теж) | ✅ (друга родина) *Otros documentos* → CONSENTIMIENTO DE LA MADRE / DEL PADRE |
 
-   - Для «Otros documentos» Mercurio просить **текстовий опис**. Пиши коротко, великими літерами.
+   - Для «Otros documentos» Mercurio просить **текстовий опис**. Пиши коротко, великими літерами і **без наголосів**: ✅ у формі «Aportar documentos» Mercurio викинув літеру з наголосом разом із наступною, і з DECLARACIÓN вийшло «DECLARACI». ⚠ Чи так само буває в первинній заяві, не перевіряли.
    - **Не вибирай** «Informe de vivienda» і «Acreditación de la permanencia continuada (mínimo 2 años)»: за SEM 2/2026 вони не потрібні.
    - Порядок завантаження не важливий. Важливо, щоб кожен файл мав правильний тип і щоб усі файли з'явилися в «Documentos adjuntados». Попроси скриншот цього списку і звір його.
    - Свій PDF з EX-25 сюди не завантажуй: заяву Mercurio вже сформував сам.
@@ -81,6 +81,10 @@ Mercurio може відхилити файл, не пояснивши прич�
 - *Número de registro*;
 - *Nº Expediente*;
 - орган (Oficina de Extranjería провінції);
-- **кількість і назви файлів**, вони мають відповідати списку.
+- **кількість і назви файлів**, вони мають відповідати списку;
+- ✅ **хеш кожного файлу**, якщо маєш доступ до файлів. У resguardo він підписаний «Hash(SHA-512)», але має лише 32 знаки: насправді це MD5 від base64-копії файлу, а не від самого PDF. Так збіглися всі файли в обох наших resguardo і в квитанціях «Aportar documentos», де той самий хеш видно ще до підпису як «Hash del Fichero». Збіг означає, що в Mercurio потрапив саме цей файл:
+  ```bash
+  python3 -c 'import base64,hashlib,sys; print(hashlib.md5(base64.b64encode(open(sys.argv[1],"rb").read())).hexdigest().upper())' файл.pdf
+  ```
 
 Запиши номери в `СТАТУС.md`.
